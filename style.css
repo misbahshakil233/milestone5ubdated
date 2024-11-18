@@ -1,0 +1,124 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f8ff, #e0e0e0);
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.input-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #520aa5;
+}
+
+.input-form h2 {
+    border-left: 5px solid #520aa5;
+    padding-left: 15px;
+}
+
+.input-form input, 
+.input-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:hover, textarea:hover {
+    transform: scale(1.05); /* Slightly enlarges the input field on hover */
+    box-shadow: 0 0 10px rgba(82, 10, 165, 0.5); /* Adds a shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+
+.resume {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #4017a1;
+    margin: 20px auto;
+}
+
+.right-column {
+    flex: 2;
+    padding: 30px;
+    background-color: #fafafa;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    background-color: #4017a1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.job-title {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    font-size: large;
+    color: #3f09f0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+ul li {
+    padding: 5px;
+    color: #333;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    list-style-type: "• "; /* Added to show bullet point */
+  margin-left: 50px;
+}
+
+hr {
+    border: 1px solid #4017a1;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

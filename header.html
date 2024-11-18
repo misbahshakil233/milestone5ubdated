@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+        body { display: flex; flex-direction: column; align-items: center; }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          background-color: #520aa5;
+            color: white;
+        }
+        .navbar-logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .navbar-center {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-center a, .navbar-right button {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .navbar-right {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar-right button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            width: 100%;
+            max-width: 1200px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .hero-text {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .hero-button {
+            padding: 12px 30px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Template Options Styling */
+        .template-options {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            padding: 20px;
+            font-size: 16px;
+            color: gray;
+            border-top: 1px solid black;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .template-options a {
+            color: gray;
+            text-decoration: none;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+        .template-options a:hover {
+            color: black;
+            border-bottom: 1px solid black;
+        }
+
+        /* Resume Images Grid Styling */
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            padding: 40px 0;
+            width: 100%;
+        }
+        .resume-card {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        .resume-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #520aa5;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">MS.Resume</div>
+        <div class="navbar-center">
+            <a href="#">Resume</a>
+            <a href="#">Cover Letter</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="navbar-right">
+            
+            <button onclick="location.href='#'">Build My Resume</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1 class="hero-title">Job-Winning Resume Template</h1>
+        <p class="hero-text">Create a resume that stands out and increases your chances of getting hired. With our professional templates, make your mark!</p>
+        <a href="index.html" class="hero-button">Create Resume</a>
+    </section>
+
+    <!-- Template Options Section -->
+    <div class="template-options">
+        <a href="#">All Templates</a>
+        <a href="#">Simple</a>
+        <a href="#">ATS</a>
+        <a href="#">Modern</a>
+        <a href="#">Creative</a>
+        <a href="#">Professional</a>
+    </div>
+
+    <!-- Resume Grid Section -->
+    <!-- <section class="resume-grid">
+        <div class="resume-card"><img src="resume1.jpg" alt="Resume Template 1"></div>
+        <div class="resume-card"><img src="resume2.jpg" alt="Resume Template 2"></div>
+        <div class="resume-card"><img src="resume3.jpg" alt="Resume Template 3"></div>
+        <div class="resume-card"><img src="resume4.jpg" alt="Resume Template 4"></div>
+        <div class="resume-card"><img src="resume5.jpg" alt="Resume Template 5"></div>
+        <div class="resume-card"><img src="resume6.jpg" alt="Resume Template 6"></div>
+    </section> -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        © 2024 MS.Resume. All rights reserved.
+    </footer> -->
+
+</body>
+</html>
